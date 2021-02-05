@@ -5,7 +5,6 @@ from datetime import datetime
 import csv
 import json
 
-
 def send():
     try:
         with open('config.json') as json_file:
@@ -14,7 +13,9 @@ def send():
             get_auth = data[0]['get_auth']
             post_url = data[0]['post_url']
             post_auth = data[0]['post_auth']
-            post_cookie = data[0]['post_cookie']    
+            post_cookie = data[0]['post_cookie']   
+            global intreval_time 
+            intreval_time = data[0]['intreval']
             
         json_file.close()
             
@@ -74,7 +75,7 @@ def send():
         print(e)
 
 send()
-schedule.every(10).seconds.do(send)
+schedule.every(intreval_time).seconds.do(send)
 
 while 1:
     schedule.run_pending()

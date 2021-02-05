@@ -5,7 +5,8 @@
             "get_auth": "",
             "post_url": "",
             "post_auth": "",
-            "post_cookie": ""
+            "post_cookie": "",
+            "intreval": 10
         }
     ]
 }
