@@ -1,0 +1,11 @@
+{
+    "config":[
+        {
+            "get_url": "",
+            "get_auth": "",
+            "post_url": "",
+            "post_auth": "",
+            "post_cookie": ""
+        }
+    ]
+}
