@@ -1,0 +1,19 @@
+{
+    "config":[
+        {
+            "example_url": "http://customer1.saas.appdynamics.com",
+            "example_time": "2021-02-07 13:02:15",
+
+            "url": "",
+            "user": "",
+            "password": "",
+            "account": "",
+            "application_id": 0,
+            "summary": "",
+            "event_types": "",
+            "severities": "",
+            "start_time": "",
+            "end_time": ""
+        }
+    ]
+}
