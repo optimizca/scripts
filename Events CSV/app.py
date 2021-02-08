@@ -24,14 +24,12 @@ try:
     #start = math.trunc(datetime.strptime(start_time, '%Y-%m-%d %H:%M:%S').timestamp() * 1000)
     #end = math.trunc(datetime.strptime(end_time, '%Y-%m-%d %H:%M:%S').timestamp() * 1000) 
 
-
     # For python 2
     start_time = datetime.strptime(start_time, '%Y-%m-%d %H:%M:%S')
     start = int(time.mktime(start_time.utctimetuple()) * 1000 + start_time.microsecond / 1000)
 
     end_time = datetime.strptime(end_time, '%Y-%m-%d %H:%M:%S')
     end = int(time.mktime(end_time.utctimetuple()) * 1000 + end_time.microsecond / 1000)
-
 
     url = baseurl + "/controller/rest/applications/" + str(application_id) + "/events?summary=" + summary + \
                     "&event-types=" + event_types + \
@@ -52,7 +50,7 @@ try:
 
     if r.status_code == 200:
         jsons = r.json()
-        with open('output '+ str(datetime.now()).replace(':', '-') +'.csv', mode='w') as events:
+        with open('output.csv', mode='w') as events:
             events_writer = csv.writer(events, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             events_writer.writerow(['archived', 
                                     'deepLinkUrl', 
