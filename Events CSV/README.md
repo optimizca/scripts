@@ -8,7 +8,7 @@ This script was tested using Python 3.9.0
 ##### Installation
 1. Clone repo to desired directory
 2. Navigate to the repo directory
-3. Enter urls and keys into `config.json`
+3. Enter config info into `config.json`
     | Variable | Type | Description |
     | --- | --- | --- |
     | url | string | Ex: http://customer1.saas.appdynamics.com |
