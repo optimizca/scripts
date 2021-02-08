@@ -4,6 +4,7 @@ import json
 import csv
 from datetime import datetime
 import math
+import time
 
 try:
     # Gets data from config.json
@@ -20,8 +21,16 @@ try:
         start_time = data[0]['start_time']
         end_time = data[0]['end_time']
 
-    start = math.trunc(datetime.strptime(start_time, '%Y-%m-%d %H:%M:%S').timestamp() * 1000)
-    end = math.trunc(datetime.strptime(end_time, '%Y-%m-%d %H:%M:%S').timestamp() * 1000) 
+#    start = math.trunc(datetime.strptime(start_time, '%Y-%m-%d %H:%M:%S').timestamp() * 1000)
+#    end = math.trunc(datetime.strptime(end_time, '%Y-%m-%d %H:%M:%S').timestamp() * 1000) 
+
+
+    start_time = datetime.strptime(start_time, '%Y-%m-%d %H:%M:%S')
+    start = int(time.mktime(start_time.utctimetuple()) * 1000 + start_time.microsecond / 1000)
+
+    end_time = datetime.strptime(end_time, '%Y-%m-%d %H:%M:%S')
+    end = int(time.mktime(end_time.utctimetuple()) * 1000 + end_time.microsecond / 1000)
+
 
     url = baseurl + "/controller/rest/applications/" + str(application_id) + "/events?summary=" + summary + \
                     "&event-types=" + event_types + \
