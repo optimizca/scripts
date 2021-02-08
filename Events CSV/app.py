@@ -20,11 +20,12 @@ try:
         severities = data[0]['severities']
         start_time = data[0]['start_time']
         end_time = data[0]['end_time']
+    # uncomment to re-add python 3 .timestamp
+    #start = math.trunc(datetime.strptime(start_time, '%Y-%m-%d %H:%M:%S').timestamp() * 1000)
+    #end = math.trunc(datetime.strptime(end_time, '%Y-%m-%d %H:%M:%S').timestamp() * 1000) 
 
-#    start = math.trunc(datetime.strptime(start_time, '%Y-%m-%d %H:%M:%S').timestamp() * 1000)
-#    end = math.trunc(datetime.strptime(end_time, '%Y-%m-%d %H:%M:%S').timestamp() * 1000) 
 
-
+    # For python 2
     start_time = datetime.strptime(start_time, '%Y-%m-%d %H:%M:%S')
     start = int(time.mktime(start_time.utctimetuple()) * 1000 + start_time.microsecond / 1000)
 
