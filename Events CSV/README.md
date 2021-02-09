@@ -20,5 +20,5 @@ This script was tested using Python 3.9.0
 4. Fill out the `metrics.csv` file with proper data   
 5. Navigate to the dependancies folder.
 6. In command line run the command `for %x in (*.whl) do py -m pip install %x`. It will loop through all the files in the folder and install them. The command is also located in `install.txt`
-7. Navigate back to the directory containing app.py
+7. Navigate back to the directory containing `app.py`
 8. Run `python3 app.py`
