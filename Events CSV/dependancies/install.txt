@@ -1,0 +1,3 @@
+Run this command in this folder from command line.
+
+for %x in (*.whl) do py -m pip install %x
