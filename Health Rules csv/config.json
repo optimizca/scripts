@@ -4,10 +4,10 @@
             "example_url": "http://customer1.saas.appdynamics.com",
             "example_time": "2021-02-07 13:02:15",
 
-            "url": "http://canadalife-test.saas.appdynamics.com",
-            "user": "oawwad",
-            "password": "optimiz123",
-            "account": "canadalife-test",
+            "url": "",
+            "user": "",
+            "password": "",
+            "account": "",
             "application_id": "19410",
             "start_time": "2021-02-07 13:02:15",
             "end_time": "2021-02-08 13:02:15"
