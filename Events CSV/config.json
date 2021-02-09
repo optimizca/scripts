@@ -8,12 +8,12 @@
             "user": "",
             "password": "",
             "account": "",
-            "application_id": 0,
+            "application_id": "19410",
             "summary": "",
-            "event_types": "",
-            "severities": "",
-            "start_time": "",
-            "end_time": ""
+            "event_types": "POLICY_CANCELED_CRITICAL,POLICY_CANCELED_WARNING,POLICY_CONTINUES_CRITICAL,POLICY_CONTINUES_WARNING,POLICY_OPEN_CRITICAL,POLICY_OPEN_WARNING,POLICY_CLOSE_CRITICAL,POLICY_CLOSE_WARNING,POLICY_DOWNGRADED,POLICY_UPGRADED",
+            "severities": "INFO,ERROR,WARN",
+            "start_time": "2021-02-07 13:02:15",
+            "end_time": "2021-02-08 13:02:15"
         }
     ]
 }
