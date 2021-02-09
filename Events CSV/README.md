@@ -18,4 +18,7 @@ This script was tested using Python 3.9.0
     | start_time | string | Starting point for query. Ex: 2021-02-07 13:02:15 |
     | end_time | string | Ending point for the query. Ex: 2021-02-07 14:02:15 |
 4. Fill out the `metrics.csv` file with proper data   
-5. Run `python3 app.py`
+5. Navigate to the dependancies folder.
+6. In command line run the command `for %x in (*.whl) do py -m pip install %x`. It will loop through all the files in the folder and install them. The command is also located in `install.txt`
+7. Navigate back to the directory containing app.py
+8. Run `python3 app.py`
